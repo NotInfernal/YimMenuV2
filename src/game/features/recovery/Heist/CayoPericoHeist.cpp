@@ -80,47 +80,38 @@ namespace YimMenu::Features
 			virtual void OnCall() override
 			{
 				Stats::SetInt("MPX_H4CNF_TARGET", _CayoPericoHeistPrimaryTarget.GetState()); // Primary target
-                Stats::SetInt("MPX_H4LOOT_CASH_I", 2359448);
-                Stats::SetInt("MPX_H4LOOT_CASH_I_SCOPED", 2359448);
-                Stats::SetInt("MPX_H4LOOT_CASH_C", 0);
-                Stats::SetInt("MPX_H4LOOT_CASH_C_SCOPED", 0);
-                Stats::SetInt("MPX_H4LOOT_COKE_I", 4901222);
-                Stats::SetInt("MPX_H4LOOT_COKE_I_SCOPED", 4901222);
-                Stats::SetInt("MPX_H4LOOT_COKE_C", 0);
-                Stats::SetInt("MPX_H4LOOT_COKE_C_SCOPED", 0);
-                Stats::SetInt("MPX_H4LOOT_GOLD_I", 0);
-                Stats::SetInt("MPX_H4LOOT_GOLD_I_SCOPED", 0);
-                Stats::SetInt("MPX_H4LOOT_GOLD_C", 255);
-                Stats::SetInt("MPX_H4LOOT_GOLD_C_SCOPED", 255);
-                Stats::SetInt("MPX_H4LOOT_WEED_I", 0);
-                Stats::SetInt("MPX_H4LOOT_WEED_I_SCOPED", 0);
-                Stats::SetInt("MPX_H4LOOT_WEED_C", 0);
-                Stats::SetInt("MPX_H4LOOT_WEED_C_SCOPED", 0);
-                Stats::SetInt("MPX_H4LOOT_PAINT", 127);
-                Stats::SetInt("MPX_H4LOOT_PAINT_SCOPED", 127);
-                Stats::SetInt("MPX_H4LOOT_CASH_V", 599431);
-                Stats::SetInt("MPX_H4LOOT_COKE_V", 1198863);
-                Stats::SetInt("MPX_H4LOOT_GOLD_V", 1598484);
-                Stats::SetInt("MPX_H4LOOT_PAINT_V", 1198863);
-				Stats::SetInt("MPX_H4LOOT_WEED_V", 0);
 				Stats::SetInt("MPX_H4_PROGRESS", _CayoPericoHeistDifficulty.GetState()); // Difficulty
-                Stats::SetInt("MPX_H4CNF_BS_GEN", 262143);
-                Stats::SetInt("MPX_H4CNF_BS_ENTR", 63);
-                Stats::SetInt("MPX_H4CNF_BS_ABIL", 63);
-                Stats::SetInt("MPX_H4CNF_WEP_DISRP", 3);
-                Stats::SetInt("MPX_H4CNF_ARM_DISRP", 3);
-                Stats::SetInt("MPX_H4CNF_HEL_DISRP", 3);
-                Stats::SetInt("MPX_H4CNF_APPROACH", -1);
-                Stats::SetInt("MPX_H4CNF_BOLTCUT", 4424);
-                Stats::SetInt("MPX_H4CNF_UNIFORM", 5256);
-                Stats::SetInt("MPX_H4CNF_GRAPPEL", 5156);
-                Stats::SetInt("MPX_H4_MISSIONS", -1);
 				Stats::SetInt("MPX_H4CNF_WEAPONS", _CayoPericoHeistWeapon.GetState()); // Weapon
-                Stats::SetInt("MPX_H4CNF_TROJAN", 5);
-				Stats::SetInt("MPX_H4_PLAYTHROUGH_STATUS", 100);
+				Stats::SetInt("MPx_H4CNF_BS_GEN", 118783);
+				Stats::SetInt("MPx_H4CNF_BOLTCUT", 4424);
+				Stats::SetInt("MPx_H4CNF_UNIFORM", 5256);
+				Stats::SetInt("MPx_H4CNF_GRAPPEL", 5156);
+				Stats::SetInt("MPx_H4CNF_TROJAN", 5);
+				Stats::SetInt("MPx_H4LOOT_CASH_I", 0);
+				Stats::SetInt("MPx_H4LOOT_CASH_I_SCOPED", 0);
+				Stats::SetInt("MPx_H4LOOT_CASH_C", 48);
+				Stats::SetInt("MPx_H4LOOT_CASH_C_SCOPED", 48);
+				Stats::SetInt("MPx_H4LOOT_COKE_I", 0);
+				Stats::SetInt("MPx_H4LOOT_COKE_I_SCOPED", 0);
+				Stats::SetInt("MPx_H4LOOT_COKE_C", 192);
+				Stats::SetInt("MPx_H4LOOT_COKE_C_SCOPED", 192);
+				Stats::SetInt("MPx_H4LOOT_GOLD_I", 0);
+				Stats::SetInt("MPx_H4LOOT_GOLD_I_SCOPED", 0);
+				Stats::SetInt("MPx_H4LOOT_GOLD_C", 12);
+				Stats::SetInt("MPx_H4LOOT_GOLD_C_SCOPED", 12);
+				Stats::SetInt("MPx_H4LOOT_WEED_I", 0);
+				Stats::SetInt("MPx_H4LOOT_WEED_I_SCOPED", 0);
+				Stats::SetInt("MPx_H4LOOT_WEED_C", 0);
+				Stats::SetInt("MPx_H4LOOT_WEED_C_SCOPED", 0);
+				Stats::SetInt("MPx_H4LOOT_PAINT", 124);
+				Stats::SetInt("MPx_H4LOOT_PAINT_SCOPED", 124);
+				Stats::SetInt("MPx_H4LOOT_CASH_V", 1037500);
+				Stats::SetInt("MPx_H4LOOT_COKE_V", 1420000);
+				Stats::SetInt("MPx_H4LOOT_GOLD_V", 2154000);
+				Stats::SetInt("MPx_H4LOOT_PAINT_V", 375000);
+				Stats::SetInt("MPx_H4_MISSIONS", 3585);
 
-                ScriptMgr::Yield(500ms);
-
+                		ScriptMgr::Yield(500ms);
 				*ScriptLocal("heist_island_planning"_J, 1566).As<int*>() = 2;
 			}
 		};
